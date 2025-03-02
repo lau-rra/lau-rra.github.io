@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  font-family: "Inter", sans-serif; /*Sans-serif as a "fallback font"*/
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: normal;
+  color: #252626;
+  background-color: #F1F1F1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  display: flex;
+  justify-content: center; /*Keskittää blockia*/
+  align-items: center;
+  text-align: center; /*Linkki tottelee alignia kyllä myös*/
+  max-height: 200px;
+  padding-top: 2.5rem;
+}
+
+.logo-link {
+  display: block;
+} /*So that <a> acts like a block*/
+
+.logo {
+  max-width: 15rem;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.menu {
+  background-color: #EAEAEA;
+  font-size: 1rem;
+  width: auto;
+  padding-left: 3rem;
+}
+
+.menu ul {
+  width: 10rem;
+  padding-left: 0;
+
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 1rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #252626;
+  transition: color 0.1s ease-in-out;
+}
+
+.menu-link:hover {
+  color: #085DFD;
+}
+
+.menu-link.active {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  background-color: white;
+  font-family: "Roboto mono";
+  font-size: small;
+}
+
+.footer .link {
+  color: #252626;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.footer .link:hover {
+  color: #085DFD;
+}
+
+/*Using CSS for window resizing*/
+@media only screen and (min-width: 439px) { /*Style for small windows*/
+  .menu {
+      font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+      font-size: 1.5rem;
+  }
+
+  footer {
+      font-size: 0.9rem;
+  }
+
+}

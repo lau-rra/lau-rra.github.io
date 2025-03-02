@@ -1,0 +1,42 @@
+.image-container {
+    position: fixed; /*Side of the page*/
+    top: 30%;
+    right: -330px;
+    transform: translateX(-130px); /*Moves the element on x-axis*/
+    width: 300px;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    cursor: pointer; /*To indicate interactivity */
+    font-family: "Roboto mono";
+    font-size: 0.7rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+.revealable-image {
+    width: 100%; /* Fits the given width of the image container */
+    height: auto;
+    transition: transform 0.5s ease; /* Smooth transition for hover/click THOUGH DO WE NEED IT AGAIN*/ 
+}
+
+.image-text {
+    position: absolute; /*On top of the image*/
+    top: 13%;
+    z-index: 1001;
+  }
+
+/* Desktop: reveal image on hover */
+@media (hover: hover) and (pointer: fine) {
+    .image-container:hover {
+        width: 450px; /* Expanding width when clicked */
+        right: -170px;
+        font-size: 1rem;
+    }
+  }
+  
+  /* Mobile: reveal image on click */
+  .image-container.expanded {
+    width: 370px; /* Expanding width when clicked */
+    right: -170px;
+    font-size: 0.9rem;
+  }
