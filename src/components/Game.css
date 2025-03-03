@@ -1,0 +1,12 @@
+.game-display {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center; /* Center the game horizontally */
+  }
+
+.game-container {
+    width: 100%; /* Ensure the game container takes up the full width */
+    max-width: 100%;
+    margin: 0 auto; /* Center the game container */
+}

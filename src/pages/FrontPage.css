@@ -16,8 +16,10 @@
 
 /*Image display*/
 .image-display img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /*takes up the full width of its container */
+  height: auto; /*Maintaining  aspect ratio */
+  max-width: 100%; /* Prevent the image from exceeding its container's width */
+  object-fit: contain; /*to ensure the image scales proportionally */
 }
 
 /*Text under the image*/
@@ -29,19 +31,6 @@
   line-height: 1.5;
   font-weight: 350;
   color: #252626;
-}
-
-.game-display {
-  width: 100%;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center; /* Center the game horizontally */
-}
-
-.game-container {
-  width: 100%; /* Ensure the game container takes up the full width */
-  max-width: 640px; /* Set a maximum width for the game */
-  margin: 0 auto; /* Center the game container */
 }
 
 @media only screen and (min-width: 439px) { /*Style for small windows*/

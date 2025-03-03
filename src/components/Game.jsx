@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import p5 from 'p5';
 import BlizzardGame from './BlizzardGame';
+import './Game.css'
 
 const Game = () => {
   const sketchRef = useRef();
