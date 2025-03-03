@@ -8,11 +8,11 @@ const Game = () => {
 
   useEffect(() => {
     const sketch = new p5((p) => {
-      // Pass the p5 instance to BlizzardGame
+      // Passing the p5 instance to BlizzardGame
       BlizzardGame(p);
     }, sketchRef.current);
 
-    // Cleanup
+    //Cleanup
     return () => {
       sketch.remove();
     };

@@ -5,25 +5,25 @@ import Game from '../components/Game.jsx';
 import textContent from '../components/textContent.js';
 
 function Container() {
-  const [activeBox, setActiveBox] = useState(null); // State to track the active box
-  const [showGame, setShowGame] = useState(false); // State to track whether to show the game
+  const [activeBox, setActiveBox] = useState(null); /*State to track the active box*/
+  const [showGame, setShowGame] = useState(false); /*State to track whether to show the game*/
 
-  // Function to handle box clicks
+  /*Function to handle box clicks*/
   const handleBoxClick = (imgSrc, altText) => {
     if (imgSrc === '/images/blizzard.gif') {
-      // Toggle the game visibility for the Blizzard box
+      // Toggle the game visibility for the snow game
       setShowGame((prev) => !prev);
-      setActiveBox(null); // Clear the active box to hide any other images
+      setActiveBox(null); /*Clear the active box to hide any other images*/
     } else {
       // For other boxes, show the image
       if (activeBox && activeBox.imgSrc === imgSrc) {
-        // If the same box is clicked again, hide the image
+        // If the same box is clicked again: hide the image
         setActiveBox(null);
       } else {
-        // Otherwise, show the new image
+        // Otherwise: show the new image
         setActiveBox({ imgSrc, altText });
       }
-      setShowGame(false); // Hide the game if it's visible
+      setShowGame(false); /*Hide the game if it's visible*/
     }
   };
 

@@ -12,16 +12,14 @@ function ImageReveal() {
       setIsExpanded(false); // Collapse the bubble when the user scrolls
     };
 
-    // Add scroll event listener
+    /*Add scroll event listener*/
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup: Remove the event listener when the component unmounts
+    /*Cleanup so remove the event listener when the component unmounts*/
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  //New implementation: Close the bubble when changing the tab?
 
   return (
     <div
