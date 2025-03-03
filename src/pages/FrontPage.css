@@ -5,6 +5,37 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  overflow: hidden;
+}
+
+.image-display {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.image-display img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-display p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.game-display {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; /* Center the game horizontally */
+}
+
+.game-container {
+  width: 100%; /* Ensure the game container takes up the full width */
+  max-width: 640px; /* Set a maximum width for the game */
+  margin: 0 auto; /* Center the game container */
 }
 
 @media only screen and (min-width: 439px) { /*Style for small windows*/
@@ -24,7 +55,7 @@
       aspect-ratio: 1 / 1; /*Ensures the boxes remain square!!*/
       font-size: 1.2rem; /*Adjusting font size */
       background-color: #D9D9D9;
-      overflow: hidden; /* Prevents text overflow outside the box */
+      overflow: hidden;
       cursor: pointer; /* Shows the pointer when hovering */
   }
 }

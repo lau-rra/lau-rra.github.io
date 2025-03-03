@@ -21,7 +21,6 @@
   .box:hover, .box:active{
     background-color: #F7F7F7;
     opacity: 0.1;
-    transform: rotate3d(0, 1, 0, 180deg)
   }
 
   @media only screen and (min-width: 424px) { /*Style for small windows*/

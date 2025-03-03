@@ -1,14 +1,12 @@
+import React from 'react';
 import './Box.css';
 
-function Box({ imgSrc, altText, text }) {
+const Box = ({ imgSrc, altText, onClick }) => {
   return (
-  <>
-    <div className="box">
-      <img src={imgSrc} alt={altText} className="boxImg" />
-      <p>{text}</p>
-    </div> {/*Accepting props */}
-  </>
-  )
-}
+    <div className="box" onClick={onClick}>
+      <img src={imgSrc} alt={altText} />
+    </div>
+  );
+};
 
 export default Box;
