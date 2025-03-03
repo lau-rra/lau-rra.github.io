@@ -5,17 +5,20 @@
     justify-content: center; /* Center everything vertically */
     width: 100%; /* Full width for the game container */
     text-align: center; /* Center the text */
+    cursor: pointer; /* Shows the pointer when hovering */
   }
   
   .game-display p {
-    font-size: 0.9rem; /* Make text consistent with the other boxes */
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 350;
     line-height: 1.5; /* Ensure readability */
     color: #252626; /* Set text color to match the style */
   }
   
   .game-text {
     width: 75%; /* Make the text container the same width as the box container */
-    max-width: 600px; /* Prevent the text from stretching too wide on large screens */
     text-align: left; /* Keep text aligned in the center */
   }
 
@@ -23,7 +26,7 @@
   /*Style for desktop*/
   @media only screen and (min-width: 768px) {
     .game-display p  {
-      font-size: 1rem;
+      font-size: 1rem; /*Able to grow the font size for bigger screens if wanted*/
     }
   }
   

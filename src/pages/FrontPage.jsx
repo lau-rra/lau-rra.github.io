@@ -57,7 +57,7 @@ function Container() {
         />
         <Box
           imgSrc="/images/film.gif"
-          altText="Film clip"
+          altText="Super8 film clip"
           onClick={() => handleBoxClick('/images/film.gif', textContent.film)}
         />
 

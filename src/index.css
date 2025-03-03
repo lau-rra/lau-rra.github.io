@@ -76,7 +76,7 @@ body {
   text-align: center;
   background-color: white;
   font-family: "Roboto mono";
-  font-size: small;
+  font-size: 0.7rem;
 }
 
 .footer .link {
@@ -93,6 +93,9 @@ body {
 @media only screen and (min-width: 439px) { /*Style for small windows*/
   .menu {
       font-size: 1.2rem;
+  }
+  .footer {
+    font-size: 0.8rem;
   }
 }
 

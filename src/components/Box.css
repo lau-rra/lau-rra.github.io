@@ -2,7 +2,9 @@
     background-color: #D9D9D9;
     color: #252626;
     width: 120px;
+    max-width: 350px; /*Set the maximum width*/
     height: 120px;
+    max-width: 350px; /*Set the maximum height*/
     text-align: center;
     font-size: 1rem; 
     display: flex;
@@ -10,6 +12,7 @@
     align-items: center; /*Center text vertically */
     /*padding: 3em, margin, border*/
     transition: background-color 1s;
+    cursor: pointer; /* Shows the pointer when hovering */
   }
   
   .box img {
@@ -32,7 +35,6 @@
         font-size: 1.2rem; /*Adjusting font size */
         background-color: #D9D9D9;
         overflow: hidden; /* Prevents text overflow outside the box */
-        cursor: pointer; /* Shows the pointer when hovering */
     }
   }
   
@@ -42,9 +44,8 @@
         width: calc((80% - 2em) / 2); /*Each box takes 50% of the container width minus the gap */
         height: auto;
         aspect-ratio: 1 / 1; /*Ensures the boxes remain square!!*/
-        font-size: 1.5rem; /*Adjusting font size */
+        font-size: 1.3rem; /*Adjusting font size */
         background-color: #D9D9D9;
-        cursor: pointer; /* Shows the pointer when hovering */
     }
   
   }

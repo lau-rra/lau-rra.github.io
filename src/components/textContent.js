@@ -1,6 +1,6 @@
 const textContent = {
     stars: `I love working with graphics. I’ve designed layouts and visuals for my student association’s magazine using Illustrator, Photoshop, and InDesign.
-            Always open to new design projects!.`,
+            Always open to new design projects!`,
     game: `I’ve built small games with PyGame and recently started translating them into JavaScript. 
             Right now, I’m especially drawn to p5.js and its creative possibilities.`,
     gems: `My creative coding journey began with PyGame, thanks to my background in Python.
