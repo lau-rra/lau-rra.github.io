@@ -7,19 +7,14 @@ function ProjectPage() {
        <div className="textcontainer">
             <div className="bodytext">
                 <ul>
-                    <li><h3 className="custom-heading">Zine “No name” (2025)</h3></li>
-                    <li className="custom-underheading">Independent work</li>
-                    <li>Here I can tell more about projects, for instance duration and results</li>
-                </ul>
-                <ul>
                     <li><h3 className="custom-heading">Yle Project (2024)</h3></li>
                     <li className="custom-underheading">Aalto University, Societal Design Course</li>
-                    <li>Here I can tell more about projects, for instance duration and results</li>
+                    <li>Collaborated with Yle to explore the media needs of Gen A, conducting in-depth research and designing a user-centered solution to meet their future media needs.</li>
                 </ul>
                 <ul>
                     <li><h3 className="custom-heading">Spruce bark dye (2023)</h3></li>
                     <li className="custom-underheading">Aalto University CHEMARTS</li>
-                    <li>Here I can tell more about projects, for instance duration and results</li>
+                    <li>Final project of the course, where I independently researched and developed a fabric dye made from the bark of a spruce tree.</li>
                 </ul>
             </div>
         </div>

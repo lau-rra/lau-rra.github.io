@@ -1,5 +1,6 @@
 .container{
   margin: 3rem 1rem;
+  max-width: 1160px; /*Max. three boxes next to each other, even with a bigger screen*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

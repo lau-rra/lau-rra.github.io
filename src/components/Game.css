@@ -5,7 +5,6 @@
     justify-content: center; /* Center everything vertically */
     width: 100%; /* Full width for the game container */
     text-align: center; /* Center the text */
-    cursor: pointer; /* Shows the pointer when hovering */
   }
   
   .game-display p {

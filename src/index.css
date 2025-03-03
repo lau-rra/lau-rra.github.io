@@ -39,6 +39,14 @@ body {
   min-height: 100vh;
 }
 
+.textcontainer {
+  max-width: 800px;
+  line-height: 1.5;
+  color: #252626;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
 .menu {
   background-color: #EAEAEA;
   font-size: 1rem;
@@ -107,5 +115,10 @@ body {
   footer {
       font-size: 0.9rem;
   }
+
+  .textcontainer{
+    padding-bottom: 2rem;
+    max-width: 100%;
+}
 
 }

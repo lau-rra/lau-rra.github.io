@@ -2,9 +2,9 @@
     background-color: #D9D9D9;
     color: #252626;
     width: 120px;
-    max-width: 350px; /*Set the maximum width*/
+    max-width: 280px; /*Set the maximum width*/
     height: 120px;
-    max-width: 350px; /*Set the maximum height*/
+    max-width: 280px; /*Set the maximum height*/
     text-align: center;
     font-size: 1rem; 
     display: flex;
