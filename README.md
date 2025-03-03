@@ -9,4 +9,5 @@ Overall, I wish the course had been longer, I had so many questions while finali
 I plan to keep working on this website since I came up with lots of ideas to improve both its usability and design!
 
 The website: lau-rra.github.io
+
 My GitHub: https://github.com/lau-rra/lau-rra.github.io
