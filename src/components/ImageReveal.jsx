@@ -34,7 +34,7 @@ function ImageReveal() {
         className="revealable-image"
       />
       <div className="image-text">
-        <p>Contact me by email: laura.lumijarvi[at]gmail.com<br />or Linkedin @lauralumijarvi</p>
+        <p>Contact me by email: laura.lumijarvi[at]gmail.com<br />or Linkedin: lauralumijarvi</p>
       </div>
     </div>
   );

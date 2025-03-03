@@ -7,7 +7,7 @@
   align-items: center;
   gap: 1rem;
   overflow: hidden;
-  padding-bottom: 2rem; /*So that the footer stays at the bottom*/
+  padding-bottom: 4rem; /*So that the footer stays at the bottom*/
 }
 
 .image-display {
