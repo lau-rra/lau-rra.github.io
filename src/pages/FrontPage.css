@@ -11,7 +11,6 @@
 .image-display {
   width: 75%;
   text-align: center;
-  margin-top: 3rem;
 }
 
 /*Image display*/
@@ -24,7 +23,6 @@
 
 /*Text under the image*/
 .image-display p {
-  margin-left: 0.5rem;
   text-align: left;
   font-size: 0.9rem;
   font-family: "Inter", sans-serif;
@@ -48,7 +46,7 @@
       width: calc((80% - 2em) / 2); /*Each box takes 50% of the container width minus the gap */
       height: auto;
       aspect-ratio: 1 / 1; /*Ensures the boxes remain square!!*/
-      font-size: 1.2rem; /*Adjusting font size */
+      font-size: 1rem; /*Adjusting font size */
       background-color: #D9D9D9;
       overflow: hidden;
       cursor: pointer; /* Shows the pointer when hovering */
@@ -73,6 +71,10 @@
       font-size: 1.5rem; /*Adjusting font size */
       background-color: #D9D9D9;
       cursor: pointer; /* Shows the pointer when hovering */
+  }
+
+  .image-display p {
+    font-size: 1rem;
   }
 
 }

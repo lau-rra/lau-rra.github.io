@@ -133,8 +133,6 @@ const BlizzardGame = (p) => {
   p.mouseReleased = () => {
     sweeping = false;
   };
-
-  
 };
 
 export default BlizzardGame;

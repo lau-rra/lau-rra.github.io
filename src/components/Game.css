@@ -1,12 +1,29 @@
 .game-display {
-    width: 100%;
-    margin-top: 3rem;
     display: flex;
-    justify-content: center; /* Center the game horizontally */
+    flex-direction: column; /* Stack the game and the text vertically */
+    align-items: center; /* Center everything horizontally */
+    justify-content: center; /* Center everything vertically */
+    width: 100%; /* Full width for the game container */
+    text-align: center; /* Center the text */
+  }
+  
+  .game-display p {
+    font-size: 0.9rem; /* Make text consistent with the other boxes */
+    line-height: 1.5; /* Ensure readability */
+    color: #252626; /* Set text color to match the style */
+  }
+  
+  .game-text {
+    width: 75%; /* Make the text container the same width as the box container */
+    max-width: 600px; /* Prevent the text from stretching too wide on large screens */
+    text-align: left; /* Keep text aligned in the center */
   }
 
-.game-container {
-    width: 100%; /* Ensure the game container takes up the full width */
-    max-width: 100%;
-    margin: 0 auto; /* Center the game container */
-}
+
+  /*Style for desktop*/
+  @media only screen and (min-width: 768px) {
+    .game-display p  {
+      font-size: 1rem;
+    }
+  }
+  

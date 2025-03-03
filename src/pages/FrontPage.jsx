@@ -64,14 +64,17 @@ function Container() {
         {/* Conditionally render the image and text */}
         {activeBox && (
           <div className="image-display">
-            <img src={activeBox.imgSrc} alt={activeBox.altText} />
             <p>{activeBox.altText}</p>
+            <img src={activeBox.imgSrc} alt={activeBox.altText} />
           </div>
         )}
 
         {/* Conditionally render the game */}
         {showGame && (
           <div className="game-display">
+            <div className="game-text">
+              <p>{textContent.game}</p>
+            </div>
             <Game />
           </div>
         )}

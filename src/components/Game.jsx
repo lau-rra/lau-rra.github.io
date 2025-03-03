@@ -19,7 +19,7 @@ const Game = () => {
   }, []);
 
   return (
-    <div className="game-container">
+    <div className="game-display">
       <div ref={sketchRef}></div>
     </div>
   );
