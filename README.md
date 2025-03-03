@@ -1,4 +1,4 @@
-# React + Vite
+# Reflection
 
 Whew, the website is done for now! Time to reflect:
 
