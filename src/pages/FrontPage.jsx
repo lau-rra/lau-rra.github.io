@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './FrontPage.css';
 import Box from '../components/Box.jsx';
 import Game from '../components/Game.jsx';
+import textContent from '../components/textContent.js';
 
 function Container() {
   const [activeBox, setActiveBox] = useState(null); // State to track the active box
@@ -32,22 +33,32 @@ function Container() {
         <Box
           imgSrc="/images/stars.gif"
           altText="Flashing colors"
-          onClick={() => handleBoxClick('/images/stars.gif', 'Flashing colors')}
+          onClick={() => handleBoxClick('/images/stars.gif', textContent.stars)}
         />
         <Box
           imgSrc="/images/blizzard.gif"
           altText="Blizzard animation"
-          onClick={() => handleBoxClick('/images/blizzard.gif', 'Blizzard animation')}
+          onClick={() => handleBoxClick('/images/blizzard.gif', textContent.game)}
         />
         <Box
           imgSrc="/images/gems.gif"
           altText="Gems falling"
-          onClick={() => handleBoxClick('/images/gems.gif', 'Gems falling')}
+          onClick={() => handleBoxClick('/images/gems.gif', textContent.gems)}
         />
         <Box
           imgSrc="/images/workpic.png"
           altText="Picture of students"
-          onClick={() => handleBoxClick('/images/workpic.png', 'Work picture')}
+          onClick={() => handleBoxClick('/images/workpic.png', textContent.picture)}
+        />
+        <Box
+          imgSrc="/images/rappu-still.png"
+          altText="Animated drawing"
+          onClick={() => handleBoxClick('/images/rappu.gif', textContent.animation)}
+        />
+        <Box
+          imgSrc="/images/film.gif"
+          altText="Film clip"
+          onClick={() => handleBoxClick('/images/film.gif', textContent.film)}
         />
 
         {/* Conditionally render the image and text */}

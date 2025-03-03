@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
     <div className="footer">
-      <p>Updated 02-03-2025 |
+      <p>Updated 03-03-2025 |
         <Link className="link" target="_blank" to="https://www.linkedin.com/in/lauralumijarvi/">
           {/*If I want to add the icon later: <img
             src="/images/linkedin.svg"

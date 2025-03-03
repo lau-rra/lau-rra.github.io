@@ -9,20 +9,26 @@
 }
 
 .image-display {
-  width: 100%;
+  width: 75%;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
+/*Image display*/
 .image-display img {
   max-width: 100%;
   height: auto;
 }
 
+/*Text under the image*/
 .image-display p {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  color: #333;
+  margin-left: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 350;
+  color: #252626;
 }
 
 .game-display {

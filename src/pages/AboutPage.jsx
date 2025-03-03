@@ -24,6 +24,8 @@ function AboutPage() {
             <li>Illustrator</li>
             <li>InDesign</li>
             <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
           </ul>
         </div>
       </div>
