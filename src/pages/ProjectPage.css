@@ -6,24 +6,112 @@
     padding-left: 4rem;
 }
 
+.project-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.75rem;
+}
+  
+.dropdown-icon {
+    font-size: 1rem;
+    color: #666;
+    transition: transform 0.2s ease;
+}
+
+.project-item {
+    margin-bottom: 2rem;
+}
+
 .custom-heading {
     font-size: 1.2em;
     font-weight: 400;
     margin-bottom: 0.1rem;
-    margin-top: 0rem;
+    margin-top: 0;
+}
+
+.custom-heading:hover .dropdown-icon {
+    color: #0073e6;
 }
 
 .custom-underheading {
     font-size: 0.9em;
     font-weight: 300;
-    margin-bottom: 1rem;
     font-style: italic;
+    margin-bottom: 0.5rem;
 }
 
-@media only screen and (min-width: 768px) { /*Style for desktop, I left textcontainer and bodytext here, since they are needed in both about and projects page*/
-    
+.project-description {
+    padding-bottom: 1rem;
+}
+
+.project-details {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid #e0e0e0;
+}
+
+.detail-step {
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0073e6;
+    line-height: 1;
+    margin-right: 1rem;
+    min-width: 50px;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.step-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #666;
+}
+
+.bullet-list {
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
     .bodytext {
         font-size: 1.1rem;
         padding-left: 5rem;
     }
-  }
+
+    .dropdown-icon {
+        font-size: 0.8rem;
+    }
+
+    .project-header {
+        gap: 0.5rem;
+    }
+    
+    .step-number {
+        font-size: 4rem;
+        min-width: 70px;
+    }
+    
+    .step-title {
+        font-size: 1.1rem;
+    }
+    
+    .step-text {
+        font-size: 1rem;
+    }
+}

@@ -1,25 +1,75 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import './ProjectPage.css';
+import projects from '../components/projectsContent';
 
 function ProjectPage() {
-    return (
-      <>
-       <div className="textcontainer">
-            <div className="bodytext">
-                <ul>
-                    <li><h3 className="custom-heading">Yle Project (2024)</h3></li>
-                    <li className="custom-underheading">Aalto University, Societal Design Course</li>
-                    <li>Collaborated with Yle to explore the media needs of Gen A, conducting in-depth research and designing a user-centered solution to meet their future media needs.</li>
-                </ul>
-                <ul>
-                    <li><h3 className="custom-heading">Spruce bark dye (2023)</h3></li>
-                    <li className="custom-underheading">Aalto University CHEMARTS</li>
-                    <li>Final project of the course, where I independently researched and developed a fabric dye made from the bark of a spruce tree.</li>
-                </ul>
+  const [activeProject, setActiveProject] = useState(null);
+
+  const toggleProject = (projectId) => {
+    setActiveProject(activeProject === projectId ? null : projectId);
+  };
+
+  return (
+    <div className="textcontainer">
+      <div className="bodytext">
+        {projects.map((project) => (
+          <div key={project.id} className="project-item">
+                        <div className="project-header" onClick={() => toggleProject(project.id)}>
+              <h3 className="custom-heading">
+                {project.title}
+              </h3>
+              <span className="dropdown-icon">
+                {activeProject === project.id ? <FaChevronUp /> : <FaChevronDown />}
+              </span>
             </div>
-        </div>
-      </>
-    )
-  }
-  
-  export default ProjectPage;
+            <p className="custom-underheading">{project.subtitle}</p>
+            
+            {activeProject === project.id && (
+              <div className="project-details">
+                <div className="project-description">
+                  <p>{project.description}</p>
+                  
+                  {project.role && (
+                    <>
+                      <span className="section-title">Key contributions</span>
+                      <ul className="bullet-list">
+                        {project.role.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </div>
+
+                {project.details.map((detail) => (
+                  <div key={detail.step} className="detail-step">
+                    <div className="step-number">{detail.step}</div>
+                    <div className="step-content">
+                      <h4 className="step-title">{detail.title}</h4>
+                      {<p className="step-text">{detail.content}</p>}
+                      
+                      {detail.bullets && (
+                        <ul className="bullet-list">
+                          {detail.bullets.map((bullet, index) => (
+                            <li key={index}>{bullet}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                ))}
+                <span className="section-title">Lessons learned</span>
+                <div className="project-learnings">
+                  <p>{project.learnings}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default ProjectPage;

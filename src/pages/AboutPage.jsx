@@ -17,8 +17,9 @@ function AboutPage() {
         </div>
 
         <div className="section">
-          <span className="section-title">Skills:</span>
+          <span className="section-title">Some fun skills:</span>
           <ul>
+            <li>Figma</li>
             <li>Premiere Pro</li>
             <li>Photoshop</li>
             <li>Illustrator</li>
