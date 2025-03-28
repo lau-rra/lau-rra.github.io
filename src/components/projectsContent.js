@@ -28,7 +28,7 @@ const projects = [
             },
             { 
                 step: 2, 
-                title: "Analysis & ideation",
+                title: "Analysis & Ideation",
                 bullets: [
                   "Qualitative coding in Atlas.io for interview analysis.",
                   "Mapped user journeys (Miro) to pinpoint gaps in Yle's reach."
@@ -70,7 +70,7 @@ const projects = [
         '/images/projectPictures/v1-aaltospace.png',
         '/images/projectPictures/a-desingsystem.png'
       ],
-      albumname: "From the original app to an interactive prototype, and an improved UI",
+      albumname: "From the original app to an interactive prototype and an improved UI",
       details: [
         { 
           step: 1, 

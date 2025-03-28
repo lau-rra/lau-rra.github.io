@@ -11,7 +11,7 @@ function AboutPage() {
         <div className="section">
           <span className="section-title">Degrees:</span>
           <ul>
-          <li>Pursuing M.Sc. (Tech) in Information Networks (2023 - Present)</li>
+            <li>Pursuing M.Sc. (Tech) in Information Networks (2023 - Present)</li>
             <li>B.Sc. (Tech) in Bioinformation Technology (2019 - 2023)</li>
           </ul>
         </div>
@@ -36,9 +36,11 @@ function AboutPage() {
             <li>Course Assistant</li>
             <li><p className="custom-underheading">Aalto University | Fall semesters 2023, 2024</p></li>
             <li><p>Guided students in debugging and UX-friendly code practices, improving course material usability.</p></li>
+            <li><br></br></li>
             <li>Marketing Intern</li>
             <li><p className="custom-underheading">Aalto University Summer School | 2023</p></li>
             <li><p>Managed the creation of online content, including news, interviews, and the design and editing of various brochures. Focused on producing visually appealing materials that  aligned with the university’s brand and enhanced information clarity.</p></li>
+            <li><br></br></li>
             <li>Barista</li>
             <li><p className="custom-underheading">Way Bakery & Café Marocco | 2018-2023</p></li>
             <li><p>Developed perseverance, independent decision-making, and adaptability in working with diverse customer needs. Also responsible for training new employees.</p></li>
