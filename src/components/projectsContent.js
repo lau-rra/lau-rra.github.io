@@ -3,15 +3,20 @@ const projects = [
         id: 1,
         title: "Designing for the Next Generation",
         subtitle: "Societal Design Project | Aalto University | 2024",
-        description: "Help our client Yle future-proof its engagement strategies for Gen Alpha (born 2010+) through Lean Service Design. We worked as a team of five students.",
+        description: "Aiding our client Yle future-proof its engagement strategies for Gen Alpha (born 2010+) through Lean Service Design. We worked as a team of five students.",
         learnings: `During the validation round, we realized that our initial approach, based on early user interviews, was flawed and had to pivot, ultimately leading to a successful solution.
                     This was the most challenging and intense project I’ve worked on, pushing me to develop not only technical skills but also the ability to balance business objectives with customer needs in a broader societal context.`,
         role: [
             "Led 1/3 of the user interviews and synthesis (affinity mapping, pain point analysis).",
-            "Co-designed the MVP’s user flows and prototype in Miro",
-            "Rotated as project manager for 3 weeks, coordinating deadlines and stakeholder check-ins",
+            "Co-designed the MVP’s user flows and prototype in Miro.",
+            "Rotated as project manager for 3 weeks, coordinating deadlines and stakeholder check-ins.",
             "Contributed to all phases: research ideation, journey mapping, and final presentation."
           ],
+        screenshots: [
+            '/images/projectPictures/alpha1.png',
+            '/images/projectPictures/alpha2.png',
+        ],
+        albumname: "Research insights",
         details: [
             { 
                 step: 1, 
@@ -54,13 +59,18 @@ const projects = [
       id: 2,
       title: "UI Precision & Scalable Design Systems",
       subtitle: "Creative Digital Concept Design | Aalto University | 2024",
-      description: "Redesign the Aalto Space app to fix UI inconsistencies (poor accessibility) and highlight rooms' unique offerings using Atomic Design.",
-      learnings: "The course taught me structured ideation techniques, including rapid ideation methods, alongside strengthening my hard skills, from refining my Figma expertise and adhering to WCAG standards to building a cohesive design system.",
-      images: [
-        '/images/og-aaltospace.png',
-        '/images/aaltospace-wireframe.png',
-        '/images/v1-aaltospace.png',
+      description: "Redesigning the Aalto Space app to fix UI inconsistencies (poor accessibility) and highlight rooms' unique offerings using Atomic Design.",
+      learnings: `This project deepened my hard skills from refining my Figma expertise and applying WCAG standards to developing a cohesive design system. 
+              It was a transformation journey: analyzing, replicating, and refining the user experience. 
+                  Recreating an existing app challenged me to strike the right balance between innovation and respecting legacy systems, ensuring UI improvements enhanced consistency, accessibility, and scalability without disrupting user familiarity.`,
+      screenshots: [
+        '/images/projectPictures/og-aaltospace.png',
+        '/images/projectPictures/aaltospace-vid.gif',
+        '/images/projectPictures/aaltospace-wireframe.png',
+        '/images/projectPictures/v1-aaltospace.png',
+        '/images/projectPictures/a-desingsystem.png'
       ],
+      albumname: "From the original app to an interactive prototype, and an improved UI",
       details: [
         { 
           step: 1, 
@@ -83,6 +93,7 @@ const projects = [
           title: "Outcome", 
           bullets: [
             "Delivered a scalable design system.",
+            "Showcased an interactive prototype.",
             "Redesigned discovery with detailed tags + specialized filters (estimated 30% faster booking).",
             "Accessible UI: Achieved WCAG AAA for text contrast (7:1+) and AA for interactive states (4.5:1+), verified via Stark plugin."
           ]
@@ -94,14 +105,21 @@ const projects = [
         id: 3,
         title: "A User Research Case Study",
         subtitle: "User-Centered Methods for Service and Product Design | Aalto University | 2023",
-        description: "Identify friction points in University of Helsinki Library employees’ workflows and propose service improvements. We were a team of four students.",
+        description: "Identifying friction points in University of Helsinki Library employees’ workflows and propose service improvements. We were a team of four students.",
         learnings: `During the project, I gained hands-on experience in scripting and conducting user interviews, as well as effectively communicating insights to various stakeholders. 
                   Additionally, I strengthened my skills in creating personas, task flows, customer journeys, and performing task analysis, ensuring a user-centered approach throughout the design process.`,
         role: [
             "Led interview scripting, conducting and analysis (n=3).",
-            "Created three Personas and a journey map.",
+            "Created three Personas, a journey map and a stakeholder map.",
             "Co-presented results to an audience."
           ],
+        screenshots: [
+            '/images/projectPictures/ucm1.png',
+            '/images/projectPictures/ucm2.png',
+            '/images/projectPictures/ucm3.png',
+            '/images/projectPictures/ucm4.png',
+        ],
+        albumname: "Applied user-centered research & design methods",
         details: [
             { 
                 step: 1, 

@@ -63,6 +63,25 @@ function ProjectPage() {
                 <div className="project-learnings">
                   <p>{project.learnings}</p>
                 </div>
+                
+                {/*Photo gallery after the project description*/}
+                {project.screenshots && (
+                  <div className="screenshot-gallery">
+                    <h4 className="gallery-title">{project.albumname}</h4>
+                    <div className="screenshots-container">
+                      {project.screenshots.map((img, index) => (
+                        <img
+                          key={index}
+                          src={img} 
+                          alt={`Mobile screen ${index + 1}`}
+                          className="mobile-screenshot"
+                          loading="lazy"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
+                
               </div>
             )}
           </div>

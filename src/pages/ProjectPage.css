@@ -1,5 +1,5 @@
 .bodytext {
-    width: 75%;
+    max-width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -88,8 +88,36 @@
     padding-left: 1rem;
 }
 
+/* Mobile Screenshot Gallery */
+.screenshot-gallery {
+    margin: 2rem 0;
+}
+  
+.gallery-title {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+  
+.screenshots-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto; /* Allows horizontal scroll if needed */
+    padding-bottom: 1rem; /* Space for scrollbar */
+}
+  
+.mobile-screenshot {
+    height: 200px; /* Fixed height for consistency */
+    width: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
 @media only screen and (min-width: 768px) {
     .bodytext {
+        max-width: 100%;
         font-size: 1.1rem;
         padding-left: 5rem;
     }
@@ -114,4 +142,5 @@
     .step-text {
         font-size: 1rem;
     }
+    
 }

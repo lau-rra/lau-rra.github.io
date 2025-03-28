@@ -45,7 +45,7 @@ body {
   color: #252626;
   text-align: left;
   padding-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .menu {
@@ -120,6 +120,7 @@ body {
   .textcontainer{
     padding-bottom: 2rem;
     max-width: 100%;
+    padding-left: 5rem;
 }
 
 }
