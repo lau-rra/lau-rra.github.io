@@ -9,7 +9,7 @@ function Container() {
   const [showGame, setShowGame] = useState(false); /*State to track whether to show the game*/
 
   /*Function to handle box clicks*/
-  const handleBoxClick = (imgSrc, altText) => {
+  const handleBoxClick = (imgSrc, altText, heading) => {
     if (imgSrc === '/images/blizzard.gif') {
       // Toggle the game visibility for the snow game
       setShowGame((prev) => !prev);
@@ -21,7 +21,7 @@ function Container() {
         setActiveBox(null);
       } else {
         // Otherwise: show the new image
-        setActiveBox({ imgSrc, altText });
+        setActiveBox({ imgSrc, altText, heading });
       }
       setShowGame(false); /*Hide the game if it's visible*/
     }
@@ -33,37 +33,38 @@ function Container() {
         <Box
           imgSrc="/images/stars.gif"
           altText="Flashing colors"
-          onClick={() => handleBoxClick('/images/stars.gif', textContent.stars)}
+          onClick={() => handleBoxClick('/images/stars.gif', textContent.stars, textContent.starsHeading)}
         />
         <Box
           imgSrc="/images/blizzard.gif"
           altText="Blizzard animation"
-          onClick={() => handleBoxClick('/images/blizzard.gif', textContent.game)}
+          onClick={() => handleBoxClick('/images/blizzard.gif', textContent.game, textContent.gameHeading)}
         />
         <Box
           imgSrc="/images/gems.gif"
           altText="Gems falling"
-          onClick={() => handleBoxClick('/images/gems.gif', textContent.gems)}
+          onClick={() => handleBoxClick('/images/gems.gif', textContent.gems, textContent.gemsHeading)}
         />
         <Box
           imgSrc="/images/workpic.png"
           altText="Picture of students"
-          onClick={() => handleBoxClick('/images/workpic.png', textContent.picture)}
+          onClick={() => handleBoxClick('/images/workpic.png', textContent.picture, textContent.pictureHeading)}
         />
         <Box
           imgSrc="/images/rappu-still.png"
           altText="Animated drawing"
-          onClick={() => handleBoxClick('/images/rappu.gif', textContent.animation)}
+          onClick={() => handleBoxClick('/images/rappu.gif', textContent.animation, textContent.animationHeading)}
         />
         <Box
           imgSrc="/images/film.gif"
           altText="Super8 film clip"
-          onClick={() => handleBoxClick('/images/film.gif', textContent.film)}
+          onClick={() => handleBoxClick('/images/film.gif', textContent.film, textContent.filmHeading)}
         />
 
         {/* Conditionally render the image and text */}
         {activeBox && (
           <div className="image-display">
+            <span className="description-heading">{activeBox.heading}</span>
             <p>{activeBox.altText}</p>
             <img src={activeBox.imgSrc} alt={activeBox.altText} />
           </div>
@@ -72,9 +73,8 @@ function Container() {
         {/* Conditionally render the game */}
         {showGame && (
           <div className="game-display">
-            <div className="game-text">
-              <p>{textContent.game}</p>
-            </div>
+            <span className="description-heading">Games and interactive design</span>
+            <p>{textContent.game}</p>
             <Game />
           </div>
         )}

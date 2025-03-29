@@ -3,8 +3,9 @@
     flex-direction: column; /*Stacking the game and the text vertically*/
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
-    width: 100%; /* Full width for the game container */
-    text-align: center;
+    width: 75%; /* Full width for the game container */
+    text-align: left;
+    padding-top: 1.5rem;
   }
   
   .game-display p {
@@ -13,11 +14,6 @@
     font-weight: 350;
     line-height: 1.5;
     color: #252626;
-  }
-  
-  .game-text {
-    width: 75%; /*Make the text container the same width as the box container */
-    text-align: left; /* Keeping text aligned in the center */
   }
 
 

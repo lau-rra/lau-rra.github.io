@@ -26,7 +26,7 @@ export const Nav = () => { {/*Exporting here already so need to down below?*/}
                         to="/projects"
                         className={({ isActive }) => `menu-link ${isActive ? "active" : ""}`}
                     >
-                        Projects
+                        UI/UX Projects
                     </NavLink>
                 </li>
             </ul>

@@ -15,13 +15,13 @@ function ProjectPage() {
       <div className="bodytext">
         {projects.map((project) => (
           <div key={project.id} className="project-item">
-                        <div className="project-header" onClick={() => toggleProject(project.id)}>
-              <h3 className="custom-heading">
-                {project.title}
-              </h3>
-              <span className="dropdown-icon">
-                {activeProject === project.id ? <FaChevronUp /> : <FaChevronDown />}
-              </span>
+              <div className="project-header" onClick={() => toggleProject(project.id)}>
+                <div className="custom-heading">
+                  {project.title}
+                  <span className="dropdown-icon">
+                    {activeProject === project.id ? <FaChevronUp /> : <FaChevronDown />}
+                  </span>
+                </div>
             </div>
             <p className="custom-underheading">{project.subtitle}</p>
             
