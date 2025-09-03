@@ -5,7 +5,7 @@ const textContent = {
         game: `I’ve built small games with PyGame and recently started translating them into JavaScript. Lately, I’ve been exploring p5.js for its creative potential 
                 in making playful, interactive experiences. I love bringing code and design together to craft engaging visuals.`,
         gems: `My coding journey started with Python, but I’ve since expanded into JavaScript to explore generative art and interactive design. 
-                Whether it's experimenting with visual patterns, dynamic interfaces or small creative tools, I enjoy coding as a medium for expression.`,
+                Whether it's experimenting with visual patterns, dynamic interfaces or small creative tools, I enjoy coding as a medium for expression. Of course I've also built this website myself, and I'm constantly developing it!`,
         gemsHeading: `Creative coding`,
         picture: `I’ve worked on both professional and personal photography and video projects. My biggest project? 
                 Filming and editing over 10 courses for Aalto Summer School, along with creating their marketing materials. I love using visuals to tell compelling stories.`,
