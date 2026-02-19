@@ -42,7 +42,7 @@ const projects = [
           ],
         tools: [
           "Lean Service Design",
-          "Semi-structured interviews and thematic analysis (Atlas.io)",
+          "Semi-structured interviews and thematic analysis (Atlas.ti)",
           "User journey analysis",
           "Prototyping in Illustrator and validation through user feedback sessions",
           "Business model development",
