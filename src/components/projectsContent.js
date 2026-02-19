@@ -1,6 +1,34 @@
 const projects = [
-    {
+      {
         id: 1,
+        title: "Experimental Design of Interactive Storytelling for Museum Apps",
+        subtitle: "Research project | National Institute of Informatics (Tokyo, Japan) | 2026",
+        description: `Led the design and experimental validation of interactive storytelling prototypes for a museum guide application in collaboration with the National Museum of Ethnology in Osaka. 
+                      Investigated how reflective prompts embedded in branching narratives influence user engagement and perceived meaning-making.`,
+        learnings: `I translated theoretical constructs (reflection, meaning-making) into measurable UX variables. Additionally, I learned about balancing narrative immersion with interaction design, and designing research protocols under ethical and institutional constraints.
+                    Importantly, I truly refined my skills in communicating research findings to international academic and design stakeholders.`,
+        role: [
+            "Designed two parallel interactive narrative prototypes (branching + reflective prompt conditions).",
+            "Developed an experimental within-subjects study design to isolate the effect of reflective microinterventions.",
+            "Identified and resolved interaction confounds (order effects, prompt salience, cognitive interference).",
+            "Delivered a validated study protocol for large-scale execution."
+          ],
+        tools: [
+          "Experimental study design",
+          "UX prototyping in Figma",
+          "Mixed-method research (quantitative surveys + qualitative interviews)",
+          "Thematic analysis",
+          "Usability evaluation",
+          "Research synthesis",
+        ],
+        screenshots: [
+        ],
+        albumname: " ",
+        details: [
+        ]
+      },  
+    {
+        id: 2,
         title: "Designing for the Next Generation",
         subtitle: "Societal Design Project | Aalto University | 2024",
         description: "Aiding our client Yle future-proof its engagement strategies for Gen Alpha (born 2010+) through Lean Service Design. We worked as a team of five students.",
@@ -12,6 +40,13 @@ const projects = [
             "Rotated as project manager for 3 weeks, coordinating deadlines and stakeholder check-ins.",
             "Contributed to all phases: research ideation, journey mapping, and final presentation."
           ],
+        tools: [
+          "Lean Service Design",
+          "Semi-structured interviews and thematic analysis (Atlas.io)",
+          "User journey analysis",
+          "Prototyping in Illustrator and validation through user feedback sessions",
+          "Business model development",
+        ],
         screenshots: [
             '/images/projectPictures/alpha1.png',
             '/images/projectPictures/alpha2.png',
@@ -30,7 +65,7 @@ const projects = [
                 step: 2, 
                 title: "Analysis & Ideation",
                 bullets: [
-                  "Qualitative coding in Atlas.io for interview analysis.",
+                  "Qualitative coding for interview analysis.",
                   "Mapped user journeys (Miro) to pinpoint gaps in Yle's reach."
                 ]
             },
@@ -40,7 +75,7 @@ const projects = [
                 bullets: [
                   "Applied Lean Service Design (business + user needs balance).",
                   "Prototyped MVP in Miro and Illustrator to validate engagement strategies.",
-                  "Hold used feedback sessions."
+                  "Hold user feedback sessions."
                 ]
             },
             { 
@@ -56,13 +91,21 @@ const projects = [
       },
     
     {
-      id: 2,
+      id: 3,
       title: "UI Precision & Scalable Design Systems",
       subtitle: "Creative Digital Concept Design | Aalto University | 2024",
       description: "Redesigning the Aalto Space app to fix UI inconsistencies (poor accessibility) and highlight rooms' unique offerings using Atomic Design.",
       learnings: `This project deepened my hard skills from refining my Figma expertise and applying WCAG standards to developing a cohesive design system. 
               It was a transformation journey: analyzing, replicating, and refining the user experience. 
                   Recreating an existing app challenged me to strike the right balance between innovation and respecting legacy systems, ensuring UI improvements enhanced consistency, accessibility, and scalability without disrupting user familiarity.`,
+      tools: [
+        "Atomic design methodology",
+        "User journeys and stories",
+        "Task flows",
+        "Wireframing and prototyping (Figma)",
+        "Design systems",
+        "WCAG accessibility standards"
+      ],
       screenshots: [
         '/images/projectPictures/og-aaltospace.png',
         '/images/projectPictures/aaltospace-vid.gif',
@@ -102,7 +145,7 @@ const projects = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "A User Research Case Study",
         subtitle: "User-Centered Methods for Service and Product Design | Aalto University | 2023",
         description: "Identifying friction points in University of Helsinki Library employees’ workflows and propose service improvements. We were a team of four students.",
@@ -113,6 +156,12 @@ const projects = [
             "Created three Personas, a journey map and a stakeholder map.",
             "Co-presented results to an audience."
           ],
+        tools: [
+          "Semi-structured interviews",
+          "Thematic analysis",
+          "Personas",
+          "Journey and stakeholder maps"
+        ],
         screenshots: [
             '/images/projectPictures/ucm1.png',
             '/images/projectPictures/ucm2.png',

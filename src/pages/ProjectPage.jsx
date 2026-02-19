@@ -40,6 +40,17 @@ function ProjectPage() {
                       </ul>
                     </>
                   )}
+
+                  {project.tools && (
+                    <>
+                      <span className="section-title">Tools and methods</span>
+                      <ul className="bullet-list">
+                        {project.tools.map((tool, index) => (
+                          <li key={index}>{tool}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
                 </div>
 
                 {project.details.map((detail) => (

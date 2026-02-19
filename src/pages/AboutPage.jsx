@@ -6,7 +6,7 @@ function AboutPage() {
     <div className="textcontainer">
       <div className="bodytext">
         <p>Hi, good to see you!</p>
-        <p>I'm a creative mind and a certified good-time enthusiast, here to collaborate with you!</p>
+        <p>I'm a creative mind and a data-based designer, here to collaborate with you!</p>
 
         <div className="section">
           <span className="section-title">Degrees:</span>
@@ -17,11 +17,10 @@ function AboutPage() {
         </div>
 
         <div className="section">
-          <span className="section-title">Some fun skills:</span>
+          <span className="section-title">I like to experiment with:</span>
           <ul>
             <li>Figma</li>
             <li>Premiere Pro</li>
-            <li>Photoshop</li>
             <li>Illustrator</li>
             <li>InDesign</li>
             <li>Python</li>
@@ -33,6 +32,14 @@ function AboutPage() {
         <div className="section">
           <span className="section-title">What I've done so far:</span>
           <ul>
+            <li>Research Intern</li>
+            <li><p className="custom-underheading">National Institute of Informatics, Tokyo, Japan | August 2025 - March 2026</p></li>
+            <li><p>Conducted independent research within a research group for the collaborative museum to upgrade their museum guide app.</p></li>
+            <li><br></br></li>
+            <li>CRM & Data Intern</li>
+            <li><p className="custom-underheading">Aalto University | June 2025 - September 2025</p></li>
+            <li><p>Supported development of D365 for Marketing, maintained CRM data and docum ented the highly customized CRM system for stakeholders.</p></li>
+            <li><br></br></li>
             <li>Course Assistant</li>
             <li><p className="custom-underheading">Aalto University | Fall semesters 2023, 2024</p></li>
             <li><p>Guided students in debugging and UX-friendly code practices, improving course material usability.</p></li>
@@ -42,8 +49,8 @@ function AboutPage() {
             <li><p>Managed the creation of online content, including news, interviews, and the design and editing of various brochures. Focused on producing visually appealing materials that  aligned with the university’s brand and enhanced information clarity.</p></li>
             <li><br></br></li>
             <li>Barista</li>
-            <li><p className="custom-underheading">Way Bakery & Café Marocco | 2018-2023</p></li>
-            <li><p>Developed perseverance, independent decision-making, and adaptability in working with diverse customer needs. Also responsible for training new employees.</p></li>
+            <li><p className="custom-underheading">Way Bakery & Café Marocco | 2018 - 2023</p></li>
+            <li><p>Developed perseverance, independent decision-making, and adaptability in working with diverse customer needs. Additionally, I was responsible for training new employees.</p></li>
           </ul>
         </div>
 
