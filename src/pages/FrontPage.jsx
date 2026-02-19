@@ -46,9 +46,9 @@ function Container() {
           onClick={() => handleBoxClick('/images/gems.gif', textContent.gems, textContent.gemsHeading)}
         />
         <Box
-          imgSrc="/images/workpic.png"
+          imgSrc="/images/workpic.jpeg"
           altText="Picture of students"
-          onClick={() => handleBoxClick('/images/workpic.png', textContent.picture, textContent.pictureHeading)}
+          onClick={() => handleBoxClick('/images/workpic.jpeg', textContent.picture, textContent.pictureHeading)}
         />
         <Box
           imgSrc="/images/rappu-still.png"
