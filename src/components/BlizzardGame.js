@@ -38,13 +38,26 @@ const BlizzardGame = (p) => {
     }
   }
 
-  p.preload = () => {
-    flowerImg = p.loadImage('/images/floweri.png'); //Loading flower image
-  };
-
-  p.setup = () => {
+  p.setup = async () => {
     p.createCanvas(640, 320);
     pileHeights = new Array(p.width).fill(0);
+    
+    // Load image with a promise
+    try {
+      flowerImg = await new Promise((resolve, reject) => {
+        p.loadImage('/images/floweri.png', 
+          (img) => resolve(img),  // success callback
+          (err) => {              // error callback
+            console.error("Failed to load flower image:", err);
+            reject(err);
+          }
+        );
+      });
+    } catch (error) {
+      console.error("Could not load flower image");
+      // Create a fallback or continue without the image
+      flowerImg = null;
+    }
   };
   
   p.draw = () => {
@@ -102,8 +115,10 @@ const BlizzardGame = (p) => {
     p.rect(0, 0, p.width, 20);
     p.rect(p.height - 20, 0, 20, p.width);
     
-    //Adding the flower.png
-    p.image(flowerImg, p.width - 550, p.height - 90, 110, 110);
+    //Adding the flower.png (check if image loaded)
+    if (flowerImg) {
+      p.image(flowerImg, p.width - 550, p.height - 90, 110, 110);
+    }
 
     // Draw curtains
     p.fill(195, 177, 225); // Set curtain color
@@ -134,5 +149,6 @@ const BlizzardGame = (p) => {
     sweeping = false;
   };
 };
+
 
 export default BlizzardGame;

@@ -2,7 +2,7 @@ const projects = [
       {
         id: 1,
         title: "Experimental Design of Interactive Storytelling for Museum Apps",
-        subtitle: "Research project | National Institute of Informatics (Tokyo, Japan) | 2026",
+        subtitle: "Research project | National Institute of Informatics (Tokyo, Japan) | Currently in progress",
         description: `Led the design and experimental validation of interactive storytelling prototypes for a museum guide application in collaboration with the National Museum of Ethnology in Osaka. 
                       Investigated how reflective prompts embedded in branching narratives influence user engagement and perceived meaning-making.`,
         learnings: `I translated theoretical constructs (reflection, meaning-making) into measurable UX variables. Additionally, I learned about balancing narrative immersion with interaction design, and designing research protocols under ethical and institutional constraints.
